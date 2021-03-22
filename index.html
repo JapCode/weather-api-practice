@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/normalizer.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="src/css/fonst.css">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <title>Weather</title>
+</head>
+<body>
+  <nav class="navegation">
+    <div>
+      <i class="icon-umbrella"></i>
+      <h2>Weather Status</h2>
+    </div>
+    <ul>
+      <li><a href="https://openweathermap.org" target="_blank">API</a></li>
+      <li><a href="#">repositorio</a></li>
+      <ul class="menuDes">contactame
+        <li><a href=""><i class="icon-github colorIcon"></i></a></i></li>
+        <li><a href="https://twitter.com/Japcrowley" target="_blank"><i class="icon-twitter colorIcon"></i></a> </li>
+        <li><a href="https://www.linkedin.com/in/jose-alonso-paredes-marin-251b11208/" target="_blank"><i class="icon-linkedin colorIcon"></i></a></li>
+      </ul>
+    </ul>
+  </nav>
+  <main>
+    <form id="form" >
+      <label for="search"></label>
+      <input id="search" type="text" placeholder="Inserta el nombre de una ciudad" autofocus>
+      <label for="buttonSearch"></label>
+      <input id="buttonSearch" type="submit" value="search">
+    </form>
+    <section id="err">
+      <!-- aqui va el mensaje de error -->
+    </section>
+    <div id="weather" class="multiWeather">
+    </div>
+    <i id="clearButton" class="icon-delete"></i>
+  </main>
+  <footer>designed with love for Alonso Paredes </footer>
+  <script src="/src/js/scripts.js" ></script>
+</body>
+</html>
