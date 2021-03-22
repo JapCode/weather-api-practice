@@ -41,7 +41,7 @@ nav ul {
   width: 25%;
   list-style: none;
   position: absolute;
-  right: 2rem;
+  right: 6rem;
 }
 nav ul li {
 }
@@ -134,7 +134,8 @@ main #weather {
   width: 80vw;
 }
 main .weatherCondition {
-  /* background: var(--color-tex); */
+  background: var(--color-tex);
+
   color: white;
   width: 25rem;
   display: flex;
