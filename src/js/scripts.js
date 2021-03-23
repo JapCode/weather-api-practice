@@ -16,10 +16,11 @@ kelvinToCelsius(315.10)
 
 const searchInput = (event) => {
   if (Event.data === "enter"){
-    searchClickAction()
+    searchAction()
   }
 }
 
+//funcion encargada de verificar si existe un archivo  igual y si no es asi devuelve el la ciudad buscada
 const searchAction = (Event) => {
   event.preventDefault();
   city = search.value.charAt(0).toUpperCase() + search.value.slice(1);
@@ -38,7 +39,7 @@ const searchAction = (Event) => {
       console.log('3')
       break
       case weathers.length === 3 && city !== weathers[0].childNodes[0].firstChild.data && city !== weathers[1].childNodes[0].firstChild.data && city !== weathers[2].childNodes[0].firstChild.data:
-      anotherFunction(API2)
+      alert('primero borra las ciudades actuales')
       console.log('4')
       break
     default: alert('ya buscaste esta ciudad')
@@ -46,6 +47,7 @@ const searchAction = (Event) => {
   }
 }
 
+//funcion encargada de llamar a la api
 const anotherFunction = async (url_api) => {
   try {
     const response = await fetch(`${url_api}${city}${apiKey}`);
@@ -84,6 +86,7 @@ const anotherFunction = async (url_api) => {
   }
 }
 
+//funciones para borrar 
 const clear = () => {
   let deletNode = [...app.childNodes]
   deletNode.forEach(Node => {
@@ -99,6 +102,7 @@ const clearErrors = () => {
   })
 }
 
+//funcion en caso de error
 const oops = () => {
   clear();
   const containerOfError = document.createElement('div');
