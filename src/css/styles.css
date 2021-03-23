@@ -91,6 +91,9 @@ nav .menuDes:hover li{
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
 }
+main {
+  flex: 1;
+}
 main #form {
   margin: 0 auto;
   width: 90vw;
@@ -214,10 +217,10 @@ main #clearButton:hover {
   transition: 0.5s;
 }
 footer {
-    color: white;
-    margin: 0.4rem auto;
-    text-align: center;
-    width: 100%;
+  color: white;
+  margin: 0.4rem auto;
+  text-align: center;
+  width: 100%;
 }
 
 /* keyframes para el fondo */
