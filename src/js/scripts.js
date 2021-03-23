@@ -1,4 +1,4 @@
-const API2 = 'http://api.openweathermap.org/data/2.5/weather?q='
+const API2 = 'https://api.openweathermap.org/data/2.5/weather?q='
 let city = 'tokyo'
 const apiKey = '&appid=590d3c9ca81c5944f27c0c6b40441687'
 const app = document.querySelector('#weather')
@@ -64,7 +64,7 @@ const anotherFunction = async (url_api) => {
     title.append(country)
     
     const image = document.createElement('img')
-    image.src=`http://openweathermap.org/img/w/${dataJason.weather[0].icon}.png`
+    image.src=`https://openweathermap.org/img/w/${dataJason.weather[0].icon}.png`
     
     const celcius = document.createElement('sup')
     celcius.textContent = '°C'
